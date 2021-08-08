@@ -1,0 +1,20 @@
+<html>
+
+<body>
+  <script>
+    //입력 값
+    let n = prompt("숫자를 입력해주세요");
+
+    nextPrime :
+    for ( let i = 2; i <= n; i++){
+      
+      for( let j = 2; j < i; j++) {
+        if(i % j == 0) continue nextPrime;
+        }
+      
+    alert(i);
+    }
+  </script>
+</body>
+
+</html>

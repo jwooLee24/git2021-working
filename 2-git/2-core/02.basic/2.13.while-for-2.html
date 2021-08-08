@@ -1,0 +1,59 @@
+<html>
+
+<body>
+  <script>
+    let i = 0;
+
+    // 1 < 5 -> alert(1) // i++ 에서 증가한 수를 수식에 바로 대입
+    // 2 < 5 -> alert(2) // 대입
+    // 3 < 5 -> alert(3) // 대입
+    // 4 < 5 -> alert(4) // 대입
+    while (++i < 5) alert(i);
+
+    // 전위형
+    // 증가한 수를 바로 수식에 대입
+    // while (++i < 5) alert(i);
+    // 반복문 (i를 1씩 증가 < 5) i를 팝업창에 표기
+
+    let j = 0;
+
+    // 0 < 5 -> alert(1) // j++ 에서 증가한 수를 다음 수식 부터 대입
+    // 1 < 5 -> alert(2) // 대입
+    // 2 < 5 -> alert(3) // 대입
+    // 3 < 5 -> alert(4) // 대입
+    // 4 < 5 -> alert(5) //대입
+    while (j++ < 5) alert(j);
+    // 후위형
+    // 증가한 수를 다음 수식에 대입
+    // while (j++ < 5) alert(j);
+    // 반복문 (j를 1씩 증가 < 5) j를 팝업창에 표기
+
+
+
+  </script>
+</body>
+
+</html>
+
+<!--
+// 전위 연산자 이므로 ++i 에서 증가한 값을 바로 5와 비교
+// i 값이 0일때 1 < 5 true = alert 1 
+// i 값이 1일때 2 < 5 true = alert 2
+// i 값이 2일때 3 < 5 true = alert 3 
+// i 값이 3일때 4 < 5 true = alert 4
+
+// i 값이 4일때 5 < 5 alert flase  
+
+let i = 0;
+while (i++ < 5)
+alert(i);
+// 후위 연산자 이므로 i++ 에서 증가한 값을 alert 에 할당
+// i 값이 0일때 0 < 5 true alert 1 
+// i 값이 1일때 1 < 5 true alert 2
+// i 값이 2일때 2 < 5 true alert 3
+// i 값이 3일때 3 < 5 true alert 4
+// i 값이 4일때 4 < 5 true alert 5
+
+// i 값이 5일때 5 < 5 false
+
+-->
