@@ -1,0 +1,26 @@
+<html>
+
+<body>
+  <script>
+   
+   let user = {
+  name: "John",
+  age: 30
+  };
+
+  let clone = {}; // 새로운 빈 객체
+
+  
+  for (let key in user) { 
+  clone[key] = user[key];
+  }
+
+  
+  clone.name = "Pete"; 
+
+  alert( user.name );  //John
+  
+  </script>
+</body>
+
+</html>
